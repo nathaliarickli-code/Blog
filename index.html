@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
-
 </head>
-<style>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+   <button>❤️<span>0</span></button>
+   <style>
 header {
 background-color: #183C63;
 color: #FFFFFF;
@@ -19,17 +24,35 @@ margin: 0 auto;
 main {
 background-color: #FFFFFF;
 color: #183C63;
+display: flex;
+}
+img {
+width: 80px;
+height: 80px;
+}
+div p {
+font-weight: bold;
+}
+.artigo-autor {
+font-weight: bold;
 }
 </style>
-
-<body>
+    </header>
+    <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
     <main>
-        <h2>Meu primeiro post</h2>
-        <p>Por: Nathalia Rickli</p>
+    
+        <div><h2>Meu primeiro post</h2>
+        <p>Por: Nathalia</p>
         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-            tecnologia.</p>
+            tecnologia.</p></div>
+       
     </main>
-
+    <script>const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;} </script>
 </body>
 
 </html>
+
