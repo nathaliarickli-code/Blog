@@ -58,6 +58,29 @@
             width: 90%;
 
         }
+ 
+.gif {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 120px;
+    z-index: 9999;
+
+    animation: moverGif 2s ease-in-out infinite;
+}
+
+@keyframes moverGif {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
 
         footer {
             background-color:#ff85ef;
@@ -167,6 +190,6 @@
     </script>
 
 </body>
-<img src="output-onlinegiftools.gif" class="gif" alt="Animação">
+img src<="output-onlinegiftools.gif" class="gif" alt="Animação">
 
 </html>
